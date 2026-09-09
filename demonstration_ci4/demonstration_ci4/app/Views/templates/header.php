@@ -149,15 +149,14 @@
     </style>
 </head>
 <body>
-<?php $baseUrl = rtrim(config('App')->baseURL, '/'); ?>
 <header>
     <div class="nav">
-        <a class="brand" href="<?= $baseUrl ?>/">Caburao <span>POS</span></a>
+        <a class="brand" href="/">Caburao <span>POS</span></a>
         <nav>
-            <a class="<?= $active === 'home' ? 'active' : '' ?>" href="<?= $baseUrl ?>/">Home</a>
-            <a class="<?= $active === 'about' ? 'active' : '' ?>" href="<?= $baseUrl ?>/about">About</a>
-            <a class="<?= $active === 'customers' ? 'active' : '' ?>" href="<?= $baseUrl ?>/customers">Customers</a>
-            <a class="<?= $active === 'users' ? 'active' : '' ?>" href="<?= $baseUrl ?>/users">Users</a>
+            <a class="<?= $active === 'home' ? 'active' : '' ?>" href="/">Home</a>
+            <a class="<?= $active === 'about' ? 'active' : '' ?>" href="/about">About</a>
+            <a class="<?= $active === 'customers' ? 'active' : '' ?>" href="/customers">Customers</a>
+            <a class="<?= $active === 'users' ? 'active' : '' ?>" href="/users">Users</a>
         </nav>
     </div>
 </header>
