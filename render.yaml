@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: caburao-pos
+    runtime: docker
+    rootDir: demonstration_ci4/demonstration_ci4
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: CI_ENVIRONMENT
+        value: production
+      - key: app_baseURL
+        value: https://caburao-pos.onrender.com/
